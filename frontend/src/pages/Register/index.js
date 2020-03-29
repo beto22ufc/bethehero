@@ -27,7 +27,7 @@ export default function Register () {
         try {
             const response = await api.post('ongs',data);
 
-            alert(`Sei Id de acesso: ${response.data.id}`);
+            alert(`Seu Id de acesso: ${response.data.id}`);
             history.push('/profile');
 
         } catch (err) {

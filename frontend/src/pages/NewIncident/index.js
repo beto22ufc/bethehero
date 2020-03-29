@@ -29,7 +29,7 @@ export default function NewIncident () {
                     Authorization: ongId,
                 }
             });
-
+            localStorage.setItem('success', 'Caso cadastrado com sucesso!');
             history.push('profile');
 
         } catch (err) {
